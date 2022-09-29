@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+/* Color variables */
+:root {
+  --color-main: #212121;
+  --color-alt: #757575;
+  --color-accent: #2196f3;
+  --color-bg-alt: #2f303a;
+}
+
+/* global */
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--color-alt);
+  font-size: 14px;
+  line-height: calc(24 / 14);
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+address {
+  font-style: normal;
+}
+
+/* header */
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  color: #000000;
+}
+.logo span {
+  color: var(--color-accent);
+}
+.nav-link {
+  color: var(--color-main);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--color-accent);
+}
+
+.cont-link {
+  color: var(--color-alt);
+}
+.cont-link:hover,
+.cont-link:focus {
+  color: var(--color-accent);
+}
+/* main */
+.hero {
+  background-color: var(--color-bg-alt);
+}
+.hero-text {
+  color: #ffffff;
+  font-size: 44px;
+  line-height: calc(60 / 24);
+}
+.hero .button {
+  color: #ffffff;
+  background-color: var(--color-accent);
+  cursor: pointer;
+}
+
+/* footer */
+.footer {
+  background-color: var(--color-bg-alt);
+}
+footer .logo {
+  color: white;
+}
+.map-link {
+  color: #ffffff;
+}
+.map-link:hover,
+.map-link:focus {
+  color: var(--color-accent);
+}
+footer .cont-link {
+  color: rgba(255, 255, 255, 0.6);
+}
