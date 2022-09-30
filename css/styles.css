@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
-/* Color variables */
+/* ---------------------------variables--------------------------- */
 :root {
   --color-main: #212121;
   --color-alt: #757575;
@@ -9,7 +9,7 @@
   --color-bg-alt: #2f303a;
 }
 
-/* global */
+/* ---------------------------global---------------------------- */
 
 body {
   font-family: "Roboto", sans-serif;
@@ -17,6 +17,7 @@ body {
   font-size: 14px;
   line-height: calc(24 / 14);
 }
+
 a {
   text-decoration: none;
 }
@@ -27,7 +28,7 @@ address {
   font-style: normal;
 }
 
-/* header */
+/* ---------------------------header--------------------------- */
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -39,6 +40,7 @@ address {
 }
 .nav-link {
   color: var(--color-main);
+  font-weight: 500;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -47,27 +49,94 @@ address {
 
 .cont-link {
   color: var(--color-alt);
+  font-weight: 500;
 }
 .cont-link:hover,
 .cont-link:focus {
   color: var(--color-accent);
 }
-/* main */
+
+/* ---------------------------main--------------------------- */
 .hero {
   background-color: var(--color-bg-alt);
 }
 .hero-text {
   color: #ffffff;
   font-size: 44px;
-  line-height: calc(60 / 24);
+  line-height: calc(60 / 44);
+  font-weight: 900;
 }
 .hero .button {
   color: #ffffff;
   background-color: var(--color-accent);
   cursor: pointer;
+  font-weight: 700;
 }
 
-/* footer */
+/* .features {} */
+
+.features-title {
+  color: var(--color-main);
+  font-weight: 700;
+}
+/* .features-text {} */
+
+/* .about {} */
+
+.about-title {
+  color: var(--color-main);
+  font-size: 36px;
+  line-height: calc(24 / 36);
+  font-weight: 700;
+}
+.team .title {
+  color: var(--color-main);
+  font-size: 36px;
+  line-height: calc(24 / 36);
+}
+.team .member-name {
+  color: var(--color-main);
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  font-weight: 500;
+}
+.team .member-role {
+  font-size: 16px;
+  line-height: calc(24 / 16);
+}
+
+/* ---------------------------main portfolio--------------------------- */
+
+.port-menu .button {
+  font-family: inherit;
+  color: var(--color-main);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: calc(26 / 16);
+  background-color: #f5f4fa;
+  border: none;
+  border-radius: 4px;
+}
+.port-menu .button:hover,
+.port-menu .button:focus {
+  color: #ffffff;
+  background-color: var(--color-accent);
+}
+
+.card-title {
+  color: var(--color-main);
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  font-weight: 700;
+}
+.card-text {
+  color: var(--color-alt);
+  font-size: 16px;
+  line-height: calc(30 / 16);
+}
+
+/* ---------------------------footer--------------------------- */
+
 .footer {
   background-color: var(--color-bg-alt);
 }
@@ -81,6 +150,10 @@ footer .logo {
 .map-link:focus {
   color: var(--color-accent);
 }
-footer .cont-link {
+.address-link {
   color: rgba(255, 255, 255, 0.6);
+}
+.address-link:hover,
+.address-link:focus {
+  color: var(--color-accent);
 }
