@@ -26,11 +26,29 @@ a {
 }
 ul {
   list-style: none;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
 }
 address {
   font-style: normal;
 }
 
+.container {
+  width: 1200px;
+  outline: tomato solid 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* ---------------------------header--------------------------- */
 
 .logo {
@@ -41,6 +59,7 @@ address {
 .logo span {
   color: var(--color-accent);
 }
+
 .nav-link {
   color: var(--color-main);
   font-weight: 500;
@@ -64,6 +83,7 @@ address {
 /* ---------------------------main--------------------------- */
 .hero {
   background-color: var(--color-bg-alt);
+  margin-bottom: 94px;
 }
 .hero-text {
   color: #ffffff;
@@ -72,6 +92,8 @@ address {
   letter-spacing: 0.06em;
   font-weight: 900;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
 }
 .hero .button {
   font-family: inherit;
@@ -89,44 +111,70 @@ address {
   background-color: #188ce8;
 }
 
-/* .features {} */
+.features {
+  margin-bottom: 94px;
+}
 
 .features-title {
   color: var(--color-main);
   font-size: 14px;
-  line-height: calc(24 / 14);
+  line-height: 16px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 /* .features-text {} */
 
-/* .about {} */
-.team {
-  background-color: var(--color-bg-sect);
-}
-.team-card {
-  background-color: #ffffff;
+.about {
+  margin-bottom: 94px;
 }
 .about-title {
   color: var(--color-main);
   font-size: 36px;
-  line-height: calc(24 / 36);
+  line-height: 42px;
   font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
 }
-.team .title {
+
+.team {
+  background-color: var(--color-bg-sect);
+}
+
+.title {
   color: var(--color-main);
   font-size: 36px;
-  line-height: calc(24 / 36);
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.team ul {
+  display: flex;
+  justify-content: space-between;
+}
+.team-card {
+  background-color: #ffffff;
+  width: 270px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 94px;
+}
+.card-text {
+  text-align: center;
+  margin: 30px 0 30px 0;
 }
 .team .member-name {
   color: var(--color-main);
   font-size: 16px;
-  line-height: calc(24 / 16);
+  line-height: 19px;
   font-weight: 500;
+  margin-bottom: 10px;
 }
 .team .member-role {
   font-size: 16px;
-  line-height: calc(24 / 16);
+  line-height: 19px;
 }
 
 /* ---------------------------main portfolio--------------------------- */
